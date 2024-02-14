@@ -1,0 +1,263 @@
+<html>
+<head>
+  <link id="favicon" rel="icon" href="Classroom.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <title>Classes</title>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html" class="navbar-link">Games</a>
+  <a href="math.html" class="navbar-link">Apps</a>
+  <a href="&.html" class="navbar-link">Settings</a>
+</div>
+
+<div class="container-apps">
+
+  <div class="container-apps">
+    <div class="column" onclick="openFnaf1()">
+      <img src="Icons/FNAFWeb.webp" alt="FNAF 1 Image">
+      <p>Five Nights At Freddys 1</p>
+    </div>
+<div class="column" onclick="openFnaf2()">
+  <img src="Icons/FNAF2.webp" alt="FNAF 2 Image">
+  <p>Five Nights At Freddys 2</p>
+  </div>
+<div class="column" onclick="openFnaf3()">
+  <img src="Icons/FNAF3.webp" alt="FNAF 3 Image">
+  <p>Five Nights at Freddys 3</p>
+  </div>
+<div class="column" onclick="openFnaf4()">
+  <img src="Icons/FNAF4.webp" alt="FNAF 4 Image">
+  <p>Five Nights at Freddys 4</p>
+  </div>
+<div class="column" onclick="openMonkeyMart()">
+  <img src="Icons/Monkey.webp" alt="Monkey Mart Image">
+  <p>Monkey Mart</p>
+  </div>
+<div class="column" onclick="openCookie()">
+  <img src="Icons/cookie.webp" alt="Cookie Clicker Image">
+  <p>Cookie Clicker</p>
+  </div>
+<div class="column" onclick="openRetroBowl()">
+  <img src="Icons/retro.webp" alt="RetroBowl Image">
+  <p>Retro Bowl</p>
+  </div>
+<div class="column" onclick="openSuperHot()">
+<img src="Icons/superhot.webp" alt="SuperHot Image">
+<p>Super Hot</p>
+</div>
+<div class="column" onclick="openSubwaySurfers()">
+<img src="Icons/Subway.webp" alt="Subway Surfers Image">
+<p>Subway Surfers</p>
+</div>
+<div class="column" onclick="openSlope()">
+<img src="Icons/slope.webp" alt="Slope Game Image">
+<p>3D Slope Game</p>
+</div>
+<div class="column" onclick="openMarioVer()">
+<img src="Icons/mvl.webp" alt="M  v  L Image">
+<p>Mario vs Luigi</p>
+</div>
+<div class="column" onclick="openBacon()">
+<img src="Icons/bacon.webp" alt="Bacon May DIe Image">
+<p>Bacon May Die</p>
+</div>
+<div class="column" onclick="openMotoX3M()">
+<img src="Icons/moto.webp" alt="Moto X3M Image">
+<p>Moto X3M</p8>
+</div>
+<div class="column" onclick="openFnW()">
+<img src="Icons/fnw.webp" alt="Fireboy and Watergirl Image">
+<p>Fireboy and Watergirl</p>
+</div>
+<div class="column" onclick="LOL()">
+<img src="Icons/1v1.webp" alt="1v1.lol Image">
+<p>1v1.LOL</p>
+
+</div>
+<div class="column" onclick="FNF7()">
+<img src="Icons/fnf.webp" alt="FNF Image">
+<p>Friday Night Funkin'</p>
+</div>
+<div class="column" onclick="HW()">
+ <img src="Icons/hwheels.webp" alt="HappyWheels Image">
+ <p>Happy Wheels</p> 
+  
+</div>
+
+<div class="column" onclick="openVenge()">
+<img src="Icons/veng.webp" alt="Venge Image">
+<p>Venge.io</p>
+
+</div>
+
+<div class="column" onclick="openIdle()">
+<img src="Icons/ibreakout.webp" alt="Idle Breakout Image">
+<p>Idle Breakout</p>
+</div>
+
+<div class="column" onclick="openStickRope()">
+<img src="Icons/stickmanhook.webp" alt="Stickman Hook Image">
+<p>Stickman Hook</p>
+</div>
+  
+</div>
+  <script>
+   
+    function openWindow(url, title, favicon) {
+      var win = window.open();
+
+      // Check if the URL is about:blank
+      if (url.toLowerCase() === 'about:blank') {
+        win.document.title = title;
+        var link = win.document.createElement('link');
+        link.rel = 'icon';
+        link.href = favicon;
+        win.document.head.appendChild(link);
+        return;
+      }
+
+      var iframe = win.document.createElement('iframe');
+      iframe.style.width = "100%";
+      iframe.style.height = "100%";
+      iframe.style.border = "none";
+      win.document.body.style.margin = '0';
+      iframe.src = url;
+      win.document.body.appendChild(iframe);
+      win.document.title = title;
+
+      // Set favicon for the opened window
+      var link = win.document.createElement('link');
+      link.rel = 'icon';
+      link.href = favicon;
+      win.document.head.appendChild(link);
+    }
+
+
+
+    function openFnaf1() {
+      openWindow("https://ubg98.github.io/FNAF/", 'Google Docs', 'docs.ico');
+    }
+
+    function openFnaf2() {
+      openWindow("https://ubg98.github.io/FNAF2/", 'Google Docs', 'docs.ico');
+    }
+
+    function openFnaf3() {
+      openWindow("https://ubg98.github.io/FNAF3/", 'Google Docs', 'docs.ico');
+    }
+
+    function openFnaf4() {
+      openWindow("https://ubg98.github.io/FNAF4/", 'Google Docs',  'docs.ico');
+    }
+
+    function openMario() {
+      openWindow("https://mathrules.dev/swf?notebook=supermario", 'Google Docs', 'docs.ico');
+    }
+    
+    function openMonkeyMart() {
+      openWindow("https://monkey-mart.io/iframe/index.html", 'Google Docs', 'docs.ico');
+    }
+
+    function openCookie() {
+      openWindow("https://orteil.dashnet.org/cookieclicker/", 'Google Docs', 'docs.ico');
+    }
+
+    function openRetroBowl() {
+      openWindow("https://jakwhegf.github.io/uab123/", 'Google Docs', 'docs.ico');
+    }
+
+    function openSuperHot() {
+      alert("When clicked, click the two arrows going away from eachother to play fullscreen.")
+      openWindow("https://f3.silvergames.com/html5/super-hot/", 'Google Docs', 'docs.ico'); 
+     
+    }
+
+      function openSubwaySurfers() {
+      openWindow("https://subwaysurfers.app/iframe/", 'Google Docs', 'docs.ico');    }
+  
+    function openSlope() {
+      openWindow("https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/version@77d7c057275710c07925ba951e9e56902d101c84/3sp.xml", 'Google Docs', 'docs.ico'); }
+
+  
+
+    function openBacon() {
+      openWindow("https://easytutoring.app/gamefiles/baconmaydie/", 'Google Docs', 'docs.ico');
+    }
+
+    
+    function openMotoX3M() {
+      openWindow("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://486017395-735910036185936427.preview.editmysite.com/uploads/b/139890129-378637188943279878/files/mx3m3.xml", 'Google Docs', 'docs.ico');
+    }
+
+    function openFnW() {
+      openWindow("https://easytutoring.app/gamefiles/fireboywatergirl/", 'Google Docs', 'docs.ico');
+    }
+
+    function LOL() {
+      openWindow("https://purepro4561.github.io/1v1-Lol/#", 'Google Docs', 'docs.ico')
+    }
+
+    function FNF7() {
+      openWindow("https://vackyton.github.io/snipersite/week7/index.html", 'Google Docs', 'docs.ico')
+    }
+
+    function HW() {
+      openWindow("https://hwunblocked.com/", 'Google Docs', 'docs.ico')
+    }
+
+    function openRoblox() {
+      openWindow("https://artclass.site/service/hvtrs8%2F-nmw%2Cge%2Fcprs-rmbnoz-aoppmrctkol%2F7369-rmbnoz.jtol", 'Google Docs', 'docs.ico')
+    }
+
+    function openVenge() {
+      openWindow("https://venge.io/", 'Google Docs', 'docs.ico');
+    }
+    
+    function openIdle() {
+      openWindow("https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/bobydob/JSEngine@25ea1da0fd27d58c36d0e4b21ae1e18405ea1244/build/id-br/ibo.xml", 'Google Docs', 'docs.ico')
+    }
+
+    function openStickRope() {
+      openWindow("https://gointerstellar.app/y/stickman-hook/index.html", 'Google Docs', 'docs.ico')
+    }
+    function gmailTitle() {
+        
+      
+    }
+    
+
+    
+
+    function changeFaviconAndTitle() {
+      var dropdown = document.getElementById("dropdown");
+      var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+      var favicon = document.getElementById("favicon");
+      var title = document.getElementsByTagName("title")[0];
+
+      switch (selectedValue) {
+        case "Google-Docs":
+          favicon.href = "docs.ico";
+          title.innerText = "Google Docs";
+          break;
+        case "Google-Classroom":
+          favicon.href = "Classroom.png";
+          title.innerText = "Classes";
+          break;
+        default:
+          favicon.href = "crescent.ico";
+          title.innerText = "Fullscreens";
+          break;
+
+        case "Clever":
+          favicon.href = "clever.ico";
+          title.innerText = "Clever";
+      }
+    }
+
+    
+  
+</script>
+</body>
+</html>
