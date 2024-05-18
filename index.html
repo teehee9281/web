@@ -16,6 +16,13 @@
 <div class="container-apps">
 
   <div class="container-apps">
+
+ <div class="column" id="suggest" onclick="Suggestion()">
+        <img src="Icons/forms.webp" alt="Google Forms">
+        <p>Suggest a Game</p>
+      </div>
+
+    
     <div class="column" onclick="openFnaf1()">
       <img src="Icons/FNAFWeb.webp" alt="FNAF 1 Image">
       <p>Five Nights At Freddys 1</p>
@@ -179,6 +186,10 @@
 
 
 
+    function Suggestion() {
+      window.open("https://forms.gle/ds4gGs5zM2ZTB3Wq8", "_blank");
+    }
+    
     function openFnaf1() {
       openWindow("https://ubg98.github.io/FNAF/", 'Google Docs', 'docs.ico');
     }
