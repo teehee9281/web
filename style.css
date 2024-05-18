@@ -125,3 +125,7 @@ button:hover {
     --divback: rgba(255, 255, 255, 0.02);
     --background-filter: blur(10px) brightness(80%);
 }
+
+#suggest p {
+    color:yellow;
+}
