@@ -156,6 +156,12 @@
    <p>Hello Neighbor</p>
   </div>
 
+<div clas="column" onclick="openHangman()">
+   <img src="Icons/hangman.webp" alt = "Hang Man Image">
+   <p>Hangman</p>
+
+  </div>
+
   </div>
   <script>
    
@@ -317,6 +323,10 @@
     function openNeighbor() {
       alert("When you click 'PLAY', you will be redirected to another website. Exit out of that one and go back to the game tab.")
       openWindow('https://thatsnotmyneighbor.org/scary-neighbor-online.embed', 'Google Docs', 'docs.ico');
+    }
+
+    function openHangman() {
+      openWindow('https://hangman-frontend.coolmathgames.com/home', 'Google Docs', 'docs.ico');
     }
     function gmailTitle() {
         
